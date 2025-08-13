@@ -164,23 +164,23 @@ export function ScientificCalculator() {
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('7')}>7</Button>
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('8')}>8</Button>
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('9')}>9</Button>
-        <Button variant="outline" className="calc-btn calc-btn-operator p-4 text-lg font-semibold" onClick={() => appendToDisplay('÷')}>÷</Button>
+        <Button className="calc-btn calc-btn-operator p-4 text-lg font-semibold" onClick={() => appendToDisplay('÷')}>÷</Button>
         
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('4')}>4</Button>
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('5')}>5</Button>
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('6')}>6</Button>
-        <Button variant="outline" className="calc-btn calc-btn-operator p-4 text-lg font-semibold" onClick={() => appendToDisplay('×')}>×</Button>
+        <Button className="calc-btn calc-btn-operator p-4 text-lg font-semibold" onClick={() => appendToDisplay('×')}>×</Button>
         
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('1')}>1</Button>
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('2')}>2</Button>
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('3')}>3</Button>
-        <Button variant="outline" className="calc-btn calc-btn-operator p-4 text-lg font-semibold" onClick={() => appendToDisplay('−')}>−</Button>
+        <Button className="calc-btn calc-btn-operator p-4 text-lg font-semibold" onClick={() => appendToDisplay('−')}>−</Button>
         
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold col-span-2" onClick={() => appendToDisplay('0')}>0</Button>
         <Button variant="outline" className="calc-btn calc-btn-number p-4 text-lg font-semibold" onClick={() => appendToDisplay('.')}>.</Button>
-        <Button variant="outline" className="calc-btn calc-btn-operator p-4 text-lg font-semibold" onClick={() => appendToDisplay('+')}>+</Button>
+        <Button className="calc-btn calc-btn-operator p-4 text-lg font-semibold" onClick={() => appendToDisplay('+')}>+</Button>
         
-        <Button variant="outline" className="calc-btn calc-btn-equals p-4 text-lg font-semibold col-span-4" onClick={calculateResult}>=</Button>
+        <Button className="calc-btn calc-btn-equals p-4 text-lg font-semibold col-span-4" onClick={calculateResult}>=</Button>
       </div>
     </div>
   );

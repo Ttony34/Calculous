@@ -93,11 +93,11 @@
   }
   
   .calc-btn-number {
-    @apply bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-white;
+    @apply bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600;
   }
   
   .calc-btn-operator {
-    @apply bg-orange-500 hover:bg-orange-600 text-white;
+    @apply bg-orange-500 hover:bg-orange-600 text-white border-orange-500 dark:border-orange-500;
   }
   
   .calc-btn-function {
@@ -109,7 +109,7 @@
   }
   
   .calc-btn-equals {
-    @apply bg-green-500 hover:bg-green-600 text-white;
+    @apply bg-green-500 hover:bg-green-600 text-white border-green-500 dark:border-green-500 font-bold;
   }
   
   .level-bubble {
