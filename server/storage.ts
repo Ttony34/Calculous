@@ -85,7 +85,7 @@ export class MemStorage implements IStorage {
         ...existing,
         ...preferences,
         updatedAt: new Date(),
-      };
+      } as UserPreferences;
       this.userPreferences.set(existing.id, updated);
       return updated;
     } else {
@@ -99,7 +99,7 @@ export class MemStorage implements IStorage {
         createdAt: new Date(),
         updatedAt: new Date(),
         ...preferences,
-      };
+      } as UserPreferences;
       this.userPreferences.set(newPrefs.id, newPrefs);
       return newPrefs;
     }

@@ -35,7 +35,7 @@ export function CurrencyConverter() {
       return;
     }
 
-    if (exchangeRate?.rate) {
+    if (exchangeRate && typeof exchangeRate === 'object' && 'rate' in exchangeRate && typeof exchangeRate.rate === 'number') {
       const convertedAmount = (amount * exchangeRate.rate).toFixed(2);
       setToAmount(convertedAmount);
     }
@@ -132,7 +132,7 @@ export function CurrencyConverter() {
       </Button>
 
       <div className="text-center text-sm text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-slate-700 p-3 rounded-lg mb-6">
-        {exchangeRate ? (
+        {exchangeRate && typeof exchangeRate === 'object' && 'rate' in exchangeRate && typeof exchangeRate.rate === 'number' ? (
           `1 ${fromCurrency} = ${exchangeRate.rate.toFixed(4)} ${toCurrency}`
         ) : fromCurrency === toCurrency ? (
           `1 ${fromCurrency} = 1 ${toCurrency}`
