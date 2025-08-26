@@ -1,5 +1,8 @@
 // server/index.ts
 import express2 from "express";
+import { inject } from '@vercel/analytics';
+
+inject();
 
 // server/routes.ts
 import { createServer } from "http";
